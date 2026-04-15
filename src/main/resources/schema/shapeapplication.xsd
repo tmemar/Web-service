@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/calculator"
+           xmlns:tns="http://example.com/calculator"
+           elementFormDefault="qualified">
+
+    <!-- Add -->
+    <xs:element name="CircleAreaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rectangle" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="CircleAreaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="area" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Subtract -->
+    <xs:element name="SquareAreaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="length" type="xs:float"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SquareAreaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="length" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Multiply -->
+    <xs:element name="RectangleAreaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="length" type="xs:float"/>
+                <xs:element name="width" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RectangleAreaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Area" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Modulus -->
+    <xs:element name="ParallelogramAreaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="base" type="xs:float"/>
+                <xs:element name="height" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ParallelogramAreaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Area" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+
+
+    <xs:element name="TriangleAreaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="base" type="xs:float"/>
+                <xs:element name="height" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TriangleAreaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Area" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+</xs:schema>
